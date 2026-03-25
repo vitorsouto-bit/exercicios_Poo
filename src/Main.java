@@ -1,15 +1,34 @@
 public class Main {
     public static void main(String[] args) {
 
+Carro caro1 = new Carro();
+caro1.marca = "honda";
+caro1.modelo = "civic";
+caro1.ano = "2020";
 
-Carro carro = new Carro("2023", "civic", "honda");
-Carro carro1 = new Carro("2025", "toyota", "corola");
+Carro carro2 = new Carro();
+carro2.marca = "toyota";
+carro2.modelo = "corola";
+carro2.ano = "2023";
 
 
 
-        System.out.print( "ano do carro é " + carro.ano + "  modelo  " +  carro.modelo +" marca "+ carro.marca + "\n");
 
-        System.out.println( "ano do carro é  " + carro1.ano + " modelo " + carro1.modelo +" marca "+ carro1.marca);
+        System.out.println(caro1.marca + "-" + caro1.modelo + "-" +caro1.ano);
+        System.out.println(carro2.marca + "-" + carro2.modelo + "-" +carro2.ano);
+
+
+        caro1.exibi();
+        carro2.exibi();
+
+
+        int idade1 = caro1.idadeDoCarro();
+        int  idade2 = carro2.idadeDoCarro();
+
+        System.out.println( "Idade do meu carro1 é " + idade1 +  "-anos " );
+        System.out.println( "===============================================" );
+        System.out.println( "Idade do meu carro2 é " + idade2 +  "-anos " );
+
 
 
     }

@@ -1,13 +1,35 @@
 public class Carro {
-    String ano;
-    String modelo;
     String marca;
+    String modelo;
+    String ano;
 
 
-    public Carro(String ano, String modelo, String marca) {
-        this.ano = ano;
-        this.modelo = modelo;
-        this.marca = marca;
-    }
+void exibi(){
+    System.out.println("======================");
+    System.out.println("marca"  + ":)" + marca);
+    System.out.println("modelo" + ":)" + modelo);
+    System.out.println("ano" + ":)" + ano);
+}
+
+int idadeDoCarro(){
+     return  2026 ;
 
 }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
