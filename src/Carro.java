@@ -1,14 +1,13 @@
 public class Carro {
-    String marca = "honda";
-    String modelo = "civic";
-    String ano = "2023";
+    String ano;
+    String modelo;
+    String marca;
 
 
-  public void Carro1() {
-        String marca = "toyota";
-        String modelo = "corola";
-        String ano = "2025";
-
+    public Carro(String ano, String modelo, String marca) {
+        this.ano = ano;
+        this.modelo = modelo;
+        this.marca = marca;
     }
 
 }
