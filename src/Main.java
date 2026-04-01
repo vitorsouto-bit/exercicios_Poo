@@ -5,22 +5,22 @@ public class Main {
 
 
                 Carro caro1 = new Carro();
-                caro1.marca = "honda";
-                caro1. = "civic";
-                caro1.ano = "2020";
+                caro1.setMarca("honda");
+                caro1.setModelo("civic");
+                caro1.setAno("2020");
 
                 Carro carro2 = new Carro();
-                carro2.marca = "toyota";
-                carro2.modelo = "corola";
-                carro2.ano = "2023";
+                carro2.setModelo("toyota");
+                carro2.setMarca("corola");
+                carro2.setAno("2022");
 
 
 
                 //imprimindo
                 System.out.println("===============================================");
                 System.out.println("exercicio 1");
-                System.out.println(caro1.marca + "-" + caro1.modelo + "-" + caro1.ano);
-                System.out.println(carro2.marca + "-" + carro2.modelo + "-" + carro2.ano);
+                System.out.println(caro1.getMarca() + "-" + caro1.getModelo() + "-" + caro1.getAno());
+                System.out.println(carro2.getMarca() + "-" + carro2.getModelo() + "-" + carro2.getAno());
 
 
 
@@ -36,8 +36,8 @@ public class Main {
 
                 System.out.println("===============================================");
                 System.out.println("exercicio 2");
-                System.out.println("Idade do meu carro1 é " + idade1 + "-anos ");
-                System.out.println("Idade do meu carro2 é " + idade2 + "-anos ");
+                System.out.println("idade do meu carro1 é " + idade1 + "-anos ");
+                System.out.println("idade do meu carro2 é " + idade2 + "-anos ");
                 System.out.println("===============================================");
 
 
