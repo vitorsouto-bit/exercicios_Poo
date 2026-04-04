@@ -10,7 +10,7 @@ public class Main {
                 caro1.setModelo("civic");
                 caro1.setAno("2020");
 
-                Carro carro2 = new Carro("toyota","colora", "2022");
+                Carro carro2 = new Carro("toyota", "colora", "2022");
                 carro2.setModelo("toyota");
                 carro2.setMarca("corola");
                 carro2.setAno("2022");
@@ -24,14 +24,13 @@ public class Main {
                 System.out.println("==================================================");
                 System.out.println(caro1.getMarca() + "-" + caro1.getModelo() + "-" + caro1.getAno());
                 System.out.println(carro2.getMarca() + "-" + carro2.getModelo() + "-" + carro2.getAno());
-               System.out.format("marca = %s, modelo = %s, ano = %s", carro3.getMarca(), carro3.getModelo(), carro3.getAno());
+                System.out.format("marca = %s, modelo = %s, ano = %s", carro3.getMarca(), carro3.getModelo(), carro3.getAno());
                 System.out.println("");
 
 
                 // imprimindo metodo void -> sem valor de retono
                 caro1.exibi();
                 carro2.exibi();
-
 
 
                 // imprimindo metodo int -> com valor de retornoo
@@ -44,25 +43,19 @@ public class Main {
                 System.out.println("===============================================");
 
 
-
-
-
-
-
                 ArrayList<String> arrayDinamico = new ArrayList<String>();
                 arrayDinamico.add("civic");
                 arrayDinamico.add("corola");
                 arrayDinamico.add("gol G9");
 
 
-
-                for (String nomeCarro :  arrayDinamico){
+                for (String nomeCarro : arrayDinamico) {
                         System.out.println(nomeCarro);
 
 
                 }
                 System.out.println("===============================================");
-              Carro.imprimirTotal();
+                Carro.imprimirTotal();
                 System.out.println("===============================================");
 
 
@@ -99,16 +92,24 @@ public class Main {
                 trocarModelo(meuCarro);
                 System.out.println(meuCarro.getModelo()); // Fusca
 
+                // EXERCÍCIO 14
+                Cliente cl1 = new Cliente("João", "joao@email.com", "9999-9999");
+                Cliente cl2 = new Cliente("Maria", "maria@email.com");
+                Cliente cl3 = new Cliente("Pedro");
+
+                cl1.exibir();
+                cl2.exibir();
+                cl3.exibir();
+
 
         }
 
         public static void trocarModelo(Carro c) {
                 c.setModelo("Fusca");
-
         }
-
-
 }
+
+
 
 
 
