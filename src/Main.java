@@ -29,8 +29,8 @@ public class Main {
 
 
                 // imprimindo metodo void -> sem valor de retono
-                caro1.exibi();
-                carro2.exibi();
+                caro1.exibir();
+                carro2.exibir();
 
 
                 // imprimindo metodo int -> com valor de retornoo
@@ -107,9 +107,70 @@ public class Main {
         public static void trocarModelo(Carro c) {
                 c.setModelo("Fusca");
         }
+
+
+        public static void menu() {
+
+                Scanner sc = new Scanner(System.in);
+                ArrayList<Carro> lista = new ArrayList<>();
+
+                int opcao;
+
+                do {
+                        System.out.println("\n1) Cadastrar");
+                        System.out.println("2) Listar");
+                        System.out.println("3) Total");
+                        System.out.println("4) Sair");
+                        System.out.print("Escolha: ");
+
+                        opcao = Integer.parseInt(sc.nextLine()); // ✔ melhor forma
+
+                        switch (opcao) {
+
+                                case 1:
+                                        System.out.print("Marca: ");
+                                        String marca = sc.nextLine();
+
+                                        System.out.print("Modelo: ");
+                                        String modelo = sc.nextLine();
+
+                                        System.out.print("Ano: ");
+                                        int ano = Integer.parseInt(sc.nextLine());
+
+                                        // ✔ CORREÇÃO PRINCIPAL (removido " ")
+                                        Carro carro = new Carro(marca, modelo,ano);
+                                        lista.add(carro);
+
+                                        System.out.println("Carro cadastrado com sucesso!");
+                                        break;
+
+                                case 2:
+                                        if (lista.isEmpty()) {
+                                                System.out.println("Nenhum carro cadastrado.");
+                                        } else {
+                                                for (Carro c : lista) {
+                                                        c.exibir(); // ✔ nome correto
+                                                }
+                                        }
+                                        break;
+
+                                case 3:
+                                        System.out.println("Total: " + Carro.totalCarros);
+                                        break;
+
+                                case 4:
+                                        System.out.println("Saindo...");
+                                        break;
+
+                                default:
+                                        System.out.println("Opção inválida!");
+                        }
+
+                } while (opcao != 4);
+
+                sc.close();
+        }
 }
-
-
 
 
 
