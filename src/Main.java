@@ -4,12 +4,12 @@ public class Main {
         public static void main(String[] args) {
 
 
-                Carro caro1 = new Carro();
+                Carro caro1 = new Carro("honda", "civic", "2020");
                 caro1.setMarca("honda");
                 caro1.setModelo("civic");
                 caro1.setAno("2020");
 
-                Carro carro2 = new Carro();
+                Carro carro2 = new Carro("toyota","colora", "2022");
                 carro2.setModelo("toyota");
                 carro2.setMarca("corola");
                 carro2.setAno("2022");

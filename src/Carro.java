@@ -3,6 +3,15 @@ public class Carro {
     private String modelo;
     private String ano;
 
+
+    //com parametro - contrutor muito mais facil de se ultilizar do ficar chamando o setters
+    public Carro(String marca, String modelo, String ano) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.ano = ano;
+    }
+
+
     public String getMarca() {
         return marca;
     }
