@@ -66,6 +66,14 @@ public class Carro {
         }
     }
 
+    /*erro, o metodo não consegue acessar.
+    static não depende de nenhuma instância para existir ou ser executado.
+    Já um atributo de instância só existe quando um objeto é criado.*/
+    public static void imprimirTotal() {
+        System.out.println("Total de carros: " + totalCarros);
+    }
+
+
 
     void exibi() {
         System.out.println("===============================================");
@@ -87,7 +95,6 @@ public class Carro {
         } catch (NumberFormatException e) {
             return 0;
         }
-
 
     }
 }

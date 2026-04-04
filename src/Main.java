@@ -63,9 +63,7 @@ public class Main {
 
                 }
                 System.out.println("===============================================");
-
-                System.out.println("total de veiculos");
-                System.out.println(Carro.totalCarros);
+              Carro.imprimirTotal();
                 System.out.println("===============================================");
         }
 }
