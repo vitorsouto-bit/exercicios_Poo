@@ -73,6 +73,17 @@ public class Main {
                 if (true) {
                         System.out.println(x);
                 }
+                System.out.println("======================================");
+
+                //Não, alterar b não muda o valor de a.
+                //Ocorre uma cópia do valor de a para b, e não uma referência ao mesmo espaço de memória.
+                int a = 10;
+                int b = a;
+                b = 99;
+                System.out.println("a = " + a); // 10
+                System.out.println("b = " + b); // 99
+                System.out.println("======================================");
+
 
         }
 }
