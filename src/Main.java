@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main {
         public static void main(String[] args) {
@@ -91,5 +92,24 @@ public class Main {
                 c4.setModelo("Palio");
                 System.out.println(c3.getModelo()); // Palio
                 System.out.println(c4.getModelo()); // Palio
+                System.out.println("======================================");
+
+                // EXERCÍCIO 13
+                Carro meuCarro = new Carro("VW", "Gol", "2015");
+                trocarModelo(meuCarro);
+                System.out.println(meuCarro.getModelo()); // Fusca
+
+
         }
+
+        public static void trocarModelo(Carro c) {
+                c.setModelo("Fusca");
+
+        }
+
+
 }
+
+
+
+
