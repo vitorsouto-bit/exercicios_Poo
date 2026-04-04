@@ -85,5 +85,11 @@ public class Main {
                 System.out.println("======================================");
 
 
+                // O objeto está na heap, e c1 e c2 (na stack) apontam para o mesmo endereço.
+                Carro c3 = new Carro("Fiat", "Uno", "2020 ");
+                Carro c4 = c3;
+                c4.setModelo("Palio");
+                System.out.println(c3.getModelo()); // Palio
+                System.out.println(c4.getModelo()); // Palio
         }
 }
