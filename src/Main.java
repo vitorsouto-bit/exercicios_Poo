@@ -16,13 +16,16 @@ public class Main {
 
                 // construtor sem parametros
                 Carro carro3 = new Carro();
+                Carro carro4 = new Carro();
+                Carro carro5 = new Carro();
 
                 //imprimindo
-                System.out.println("===============================================");
+                System.out.println("==================================================");
                 System.out.println("exercicio 1 e 6");
                 System.out.println(caro1.getMarca() + "-" + caro1.getModelo() + "-" + caro1.getAno());
                 System.out.println(carro2.getMarca() + "-" + carro2.getModelo() + "-" + carro2.getAno());
-                System.out.format("marca: %s, modelo = %s, ano = %s ", carro3.getMarca(), carro3.getModelo(), carro3.getAno() );
+               System.out.format("marca = %s, modelo = %s, ano = %s", carro3.getMarca(), carro3.getModelo(), carro3.getAno());
+                System.out.println("");
 
 
                 // imprimindo metodo void -> sem valor de retono
@@ -43,6 +46,10 @@ public class Main {
 
 
 
+
+
+
+
                 ArrayList<String> arrayDinamico = new ArrayList<String>();
                 arrayDinamico.add("civic");
                 arrayDinamico.add("corola");
@@ -57,6 +64,8 @@ public class Main {
                 }
                 System.out.println("===============================================");
 
-
+                System.out.println("total de veiculos");
+                System.out.println(Carro.totalCarros);
+                System.out.println("===============================================");
         }
 }

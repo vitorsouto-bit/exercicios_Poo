@@ -15,13 +15,16 @@ public class Carro {
     public Carro(String marca, String modelo, String ano) {
         this.marca = marca;
         this.modelo = modelo;
-        this.ano = ano;
+        setAno(ano);
+        totalCarros++;
+
 
     }
     public Carro(){
         marca =  "desconhecida";
         modelo=  "desconhecida";
         ano=  "0";
+        totalCarros++;
 
 
     }
@@ -68,6 +71,7 @@ public class Carro {
         System.out.println("===============================================");
         System.out.println("exercico 2");
         System.out.println("Marca: " + marca + " | Modelo: " + modelo + " | Ano: " + ano);
+
 
     }
 
