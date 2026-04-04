@@ -68,5 +68,11 @@ public class Main {
                 /*O valor dela não pode ser alterado depois de ser atribuído pela primeira vez.
                 Carro.ANO_PRIMEIRO_CARRO = 1900; */
 
+                // apresensou erro. Escopo é a região do código onde uma variável existe e pode ser acessada.
+                int x = 10;
+                if (true) {
+                        System.out.println(x);
+                }
+
         }
 }
