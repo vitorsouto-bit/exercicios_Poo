@@ -21,7 +21,6 @@ public class Main {
 
                 //imprimindo
                 System.out.println("==================================================");
-                System.out.println("exercicio 1 e 6");
                 System.out.println(caro1.getMarca() + "-" + caro1.getModelo() + "-" + caro1.getAno());
                 System.out.println(carro2.getMarca() + "-" + carro2.getModelo() + "-" + carro2.getAno());
                System.out.format("marca = %s, modelo = %s, ano = %s", carro3.getMarca(), carro3.getModelo(), carro3.getAno());
@@ -39,7 +38,6 @@ public class Main {
                 int idade2 = carro2.idadeDoCarro();
 
                 System.out.println("===============================================");
-                System.out.println("exercicio 2");
                 System.out.println("idade do meu carro1 é " + idade1 + "-anos ");
                 System.out.println("idade do meu carro2 é " + idade2 + "-anos ");
                 System.out.println("===============================================");
@@ -54,7 +52,7 @@ public class Main {
                 arrayDinamico.add("civic");
                 arrayDinamico.add("corola");
                 arrayDinamico.add("gol G9");
-                System.out.println("exercicio 3");
+
 
 
                 for (String nomeCarro :  arrayDinamico){
@@ -65,5 +63,10 @@ public class Main {
                 System.out.println("===============================================");
               Carro.imprimirTotal();
                 System.out.println("===============================================");
+
+
+                /*O valor dela não pode ser alterado depois de ser atribuído pela primeira vez.
+                Carro.ANO_PRIMEIRO_CARRO = 1900; */
+
         }
 }

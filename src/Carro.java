@@ -77,7 +77,6 @@ public class Carro {
 
     void exibi() {
         System.out.println("===============================================");
-        System.out.println("exercico 2");
         System.out.println("Marca: " + marca + " | Modelo: " + modelo + " | Ano: " + ano);
 
 
