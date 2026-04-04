@@ -3,12 +3,27 @@ public class Carro {
     private String modelo;
     private String ano;
 
+    // static
+    public static int totalCarros = 0;
+
+    // final
+    public static final int ANO_PRIMEIRO_CARRO = 1886;
+
+
 
     //com parametro - contrutor muito mais facil de se ultilizar do ficar chamando o setters
     public Carro(String marca, String modelo, String ano) {
         this.marca = marca;
         this.modelo = modelo;
         this.ano = ano;
+
+    }
+    public Carro(){
+        marca =  "desconhecida";
+        modelo=  "desconhecida";
+        ano=  "0";
+
+
     }
 
 
@@ -50,11 +65,9 @@ public class Carro {
 
 
     void exibi() {
-        System.out.println("======================");
-        System.out.println("exercicio 2");
-        System.out.println("marca" + ":)" + marca);
-        System.out.println("modelo" + ":)" + modelo);
-        System.out.println("ano" + ":)" + ano);
+        System.out.println("===============================================");
+        System.out.println("exercico 2");
+        System.out.println("Marca: " + marca + " | Modelo: " + modelo + " | Ano: " + ano);
 
     }
 

@@ -14,14 +14,15 @@ public class Main {
                 carro2.setMarca("corola");
                 carro2.setAno("2022");
 
-
+                // construtor sem parametros
+                Carro carro3 = new Carro();
 
                 //imprimindo
                 System.out.println("===============================================");
-                System.out.println("exercicio 1");
+                System.out.println("exercicio 1 e 6");
                 System.out.println(caro1.getMarca() + "-" + caro1.getModelo() + "-" + caro1.getAno());
                 System.out.println(carro2.getMarca() + "-" + carro2.getModelo() + "-" + carro2.getAno());
-
+                System.out.format("marca: %s, modelo = %s, ano = %s ", carro3.getMarca(), carro3.getModelo(), carro3.getAno() );
 
 
                 // imprimindo metodo void -> sem valor de retono
