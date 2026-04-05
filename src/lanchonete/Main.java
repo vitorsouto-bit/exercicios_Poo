@@ -1,17 +1,17 @@
 package lanchonete;
-import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Main {
 
 
 
-        public static void main(String[] args) {
+        public static void main(String[] args){
 
             Scanner sc = new Scanner(System.in);
 
             ArrayList<Lanche> cardapio = new ArrayList<>();
-            ArrayList<String> pedidos = new ArrayList<>();
+            ArrayList<Pedido> pedidos = new ArrayList<>();
 
             int opcao;
 
@@ -57,7 +57,7 @@ public class Main {
                             break;
                         }
 
-                        Pedidos pedidos1 = new Pedidos();
+                        Pedido pedido = new Pedido();
 
                         int escolha;
                         do {
@@ -71,18 +71,18 @@ public class Main {
                             escolha = Integer.parseInt(sc.nextLine());
 
                             if (escolha >= 0 && escolha < cardapio.size()) {
-                                pedidos1.adicionarLanche(cardapio.get(escolha));
+                                pedido.adicionarLanche(cardapio.get(escolha));
                                 System.out.println("Item adicionado!");
                             }
 
                         } while (escolha != -1);
 
-                        pedidos.add("pedidos");
-                        pedidos1.exibirPedido();
+                        pedidos.add(pedido);
+                        pedido.exibirPedido();
                         break;
 
                     case 4:
-                        System.out.println("Total de pedidos: " + pedidos);
+                        System.out.println("Total de pedidos: " + Pedido.totalPedidos);
                         break;
 
                     case 5:
@@ -97,5 +97,6 @@ public class Main {
 
             sc.close();
         }
-    }
+}
+
 

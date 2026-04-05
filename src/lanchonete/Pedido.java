@@ -1,14 +1,16 @@
 package lanchonete;
+
 import java.util.ArrayList;
 
-public class Pedidos {
+
+public class Pedido {
 
 
 
         private ArrayList<Lanche> itens;
         public static int totalPedidos = 0;
 
-        public Pedidos() {
+        public Pedido() {
             itens = new ArrayList<>();
             totalPedidos++;
         }

@@ -1,4 +1,4 @@
-package exercicio_Poo;
+package exercicio_1_15;
 
 public class Cliente {
 

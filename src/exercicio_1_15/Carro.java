@@ -1,4 +1,4 @@
-package exercicio_Poo;
+package exercicio_1_15;
 
 public class Carro {
     private String marca;
@@ -79,7 +79,7 @@ public class Carro {
 
 
 
-    void exibir() {
+    public void exibir() {
         System.out.println("===============================================");
         System.out.println("Marca: " + marca + " | Modelo: " + modelo + " | Ano: " + ano);
 
