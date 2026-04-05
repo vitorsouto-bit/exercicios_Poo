@@ -1,3 +1,5 @@
+package exercicio_Poo;
+
 public class Cliente {
 
         private String nome;

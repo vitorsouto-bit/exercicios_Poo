@@ -1,3 +1,5 @@
+package exercicio_Poo;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -60,7 +62,7 @@ public class Main {
 
 
                 /*O valor dela não pode ser alterado depois de ser atribuído pela primeira vez.
-                Carro.ANO_PRIMEIRO_CARRO = 1900; */
+                exercicio_Poo.Carro.ANO_PRIMEIRO_CARRO = 1900; */
 
                 // apresensou erro. Escopo é a região do código onde uma variável existe e pode ser acessada.
                 int x = 10;
@@ -140,7 +142,7 @@ menu();
                                         Carro carro = new Carro(marca, modelo, "ano");
                                         lista.add(carro);
 
-                                        System.out.println("Carro cadastrado com sucesso!");
+                                        System.out.println("exercicio_Poo.Carro cadastrado com sucesso!");
                                         break;
 
                                 case 2:
