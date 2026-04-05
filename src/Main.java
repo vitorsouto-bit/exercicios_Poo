@@ -100,7 +100,7 @@ public class Main {
                 cl1.exibir();
                 cl2.exibir();
                 cl3.exibir();
-
+menu();
 
         }
 
@@ -123,7 +123,7 @@ public class Main {
                         System.out.println("4) Sair");
                         System.out.print("Escolha: ");
 
-                        opcao = Integer.parseInt(sc.nextLine()); // ✔ melhor forma
+                        opcao = Integer.parseInt(sc.nextLine());
 
                         switch (opcao) {
 
@@ -137,8 +137,7 @@ public class Main {
                                         System.out.print("Ano: ");
                                         int ano = Integer.parseInt(sc.nextLine());
 
-                                        // ✔ CORREÇÃO PRINCIPAL (removido " ")
-                                        Carro carro = new Carro(marca, modelo,ano);
+                                        Carro carro = new Carro(marca, modelo, "ano");
                                         lista.add(carro);
 
                                         System.out.println("Carro cadastrado com sucesso!");
@@ -149,7 +148,7 @@ public class Main {
                                                 System.out.println("Nenhum carro cadastrado.");
                                         } else {
                                                 for (Carro c : lista) {
-                                                        c.exibir(); // ✔ nome correto
+                                                        c.exibir();
                                                 }
                                         }
                                         break;
@@ -169,6 +168,7 @@ public class Main {
                 } while (opcao != 4);
 
                 sc.close();
+                menu();
         }
 }
 
