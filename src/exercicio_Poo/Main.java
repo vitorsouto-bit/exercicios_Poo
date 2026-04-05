@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
         public static void main(String[] args) {
 
-
+//exercicio
                 Carro caro1 = new Carro("honda", "civic", "2020");
                 caro1.setMarca("honda");
                 caro1.setModelo("civic");
